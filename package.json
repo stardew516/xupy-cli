@@ -1,0 +1,44 @@
+{
+  "name": "xupy-cli",
+  "version": "1.0.0",
+  "description": "xupy-cli",
+  "main": "./xupy/index.js",
+  "scripts": {
+    "test": "node ./bin/xupy.js",
+    "dev": "node ./bin/xupy.js build -w",
+    "build": "node ./bin/xupy.js build",
+    "babel": "rm -rf xupy/dist && babel --presets es2015,stage-1 xupy --out-dir ./xupy/dist",
+    "deploy": "node ./build/index.js"
+  },
+  "bin": {
+    "xupy": "./bin/xupy.js"
+  },
+  "miniprogram": "xupy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaunjie/xupy-cli.git"
+  },
+  "keywords": [
+    "xupy-cli"
+  ],
+  "author": "chuanjie",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "chokidar": "^2.0.4",
+    "colors": "^1.3.2",
+    "cssmin": "^0.4.3",
+    "git-clone": "^0.1.0",
+    "glob": "^7.1.3",
+    "less": "^3.8.1",
+    "shelljs": "^0.8.2",
+    "tracer": "^0.9.1",
+    "uglify-js": "^3.4.9",
+    "xmldom": "^0.1.27",
+    "commander": "^2.17.1"
+  }
+}

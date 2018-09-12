@@ -1,0 +1,2 @@
+# xupy-cli
+weapp
